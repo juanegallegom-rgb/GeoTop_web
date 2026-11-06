@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" role="img" aria-labelledby="title desc">
+<title id="title">GeoTop</title><desc id="desc">Logotipo GeoTop de topografía y geomática</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d99a"/><stop offset="1" stop-color="#0aa66a"/></linearGradient></defs>
+<rect x="4" y="4" width="102" height="102" rx="24" fill="#0a1914" stroke="#22d99a" stroke-width="4"/>
+<path d="M27 76V34h22c15 0 24 8 24 21s-9 21-24 21H27Zm17-14h5c7 0 11-2 11-7s-4-7-11-7h-5v14Z" fill="url(#g)"/>
+<path d="M80 25 91 18v74l-11 7V25Z" fill="#f5faf8" opacity=".9"/>
+<text x="128" y="67" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#f5faf8">Geo<tspan fill="#22d99a">Top</tspan></text>
+<text x="131" y="91" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3" fill="#9aaca5">TOPOGRAFÍA • GEOMÁTICA</text>
+</svg>

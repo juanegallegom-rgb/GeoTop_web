@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GeoTop - Topografía, geomática, cartografía y soluciones geoespaciales.">
+  <title>GeoTop | Topografía, Geomática y Cartografía</title>
+  <link rel="icon" type="image/svg+xml" href="recursos/imagenes/logo-geotop.svg">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#inicio" class="brand" aria-label="GeoTop, inicio"><img src="recursos/imagenes/logo-geotop.svg" alt="GeoTop - Topografía y Geomática"></a>
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#tecnologia">Tecnología</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#visor">Visor</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button id="themeButton" class="theme-button" type="button" aria-label="Cambiar tema" title="Cambiar tema">☾</button>
+      <button id="menuButton" class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbar">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <img src="recursos/imagenes/portada.svg" alt="Representación topográfica de un terreno" class="hero-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="tag">TOPOGRAFÍA • GEOMÁTICA • CARTOGRAFÍA</p>
+        <h1>Medimos el terreno.<span>Transformamos los datos.</span></h1>
+        <p>Soluciones profesionales para levantamientos, georreferenciación, fotogrametría y análisis de información geoespacial.</p>
+        <div class="hero-buttons">
+          <a href="#servicios" class="btn primary">Ver servicios</a>
+          <a href="#contacto" class="btn secondary">Solicitar cotización</a>
+        </div>
+      </div>
+      <div class="coordinates" aria-hidden="true">04°36'35"N<br>74°04'54"W<br>ELEV. 2640 m</div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="section-title">
+        <p class="tag">NUESTROS SERVICIOS</p>
+        <h2>Soluciones para el <span>territorio</span></h2>
+        <p>Capturamos y procesamos información espacial para proyectos de ingeniería, construcción y planificación territorial.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card"><div class="service-number">01</div><div class="service-icon">⌁</div><h3>Topografía</h3><p>Levantamientos planimétricos y altimétricos para conocer con precisión las características del terreno.</p></article>
+        <article class="service-card"><div class="service-number">02</div><div class="service-icon">◎</div><h3>Georreferenciación</h3><p>Posicionamiento y control de coordenadas mediante tecnologías GNSS y RTK.</p></article>
+        <article class="service-card"><div class="service-number">03</div><div class="service-icon">△</div><h3>Fotogrametría</h3><p>Generación de ortofotos, modelos digitales y productos tridimensionales.</p></article>
+        <article class="service-card"><div class="service-number">04</div><div class="service-icon">▦</div><h3>Cartografía</h3><p>Elaboración y visualización de información cartográfica digital.</p></article>
+        <article class="service-card"><div class="service-number">05</div><div class="service-icon">◈</div><h3>Sistemas SIG</h3><p>Gestión y análisis de información geográfica para apoyar decisiones territoriales.</p></article>
+        <article class="service-card"><div class="service-number">06</div><div class="service-icon">▱</div><h3>Control de obras</h3><p>Replanteos, seguimiento geométrico y control de proyectos de construcción.</p></article>
+      </div>
+    </section>
+
+    <section class="visual-section section">
+      <div class="section-title">
+        <p class="tag">CAMPO Y OFICINA</p>
+        <h2>Topografía y <span>geomática</span></h2>
+        <p>Visualiza de forma rápida los principales campos de trabajo de GeoTop.</p>
+      </div>
+      <div class="visual-grid">
+        <article class="visual-card"><img src="recursos/imagenes/topografia.svg" alt="Ilustración de topografía y curvas de nivel"><div><span>TOPOGRAFÍA</span><h3>Medición precisa del terreno</h3><p>Levantamientos, nivelación, coordenadas y control geométrico.</p></div></article>
+        <article class="visual-card"><img src="recursos/imagenes/geomatica.svg" alt="Ilustración de geomática y datos geoespaciales"><div><span>GEOMÁTICA</span><h3>Datos que se convierten en información</h3><p>GNSS, SIG, cartografía y análisis de información espacial.</p></div></article>
+      </div>
+    </section>
+
+    <section id="tecnologia" class="technology-section">
+      <div class="technology-image"><img src="recursos/imagenes/terreno.svg" alt="Representación de terreno y curvas de nivel"></div>
+      <div class="technology-content">
+        <p class="tag">TECNOLOGÍA</p>
+        <h2>Del terreno al <span>dato digital</span></h2>
+        <p>Utilizamos diferentes tecnologías de captura y procesamiento para convertir el territorio en información útil.</p>
+        <div class="technology-list">
+          <div><strong>GNSS / RTK</strong><span>Posicionamiento preciso</span></div>
+          <div><strong>ESTACIÓN TOTAL</strong><span>Medición y replanteo</span></div>
+          <div><strong>DRONES</strong><span>Captura fotogramétrica</span></div>
+          <div><strong>SIG</strong><span>Análisis geoespacial</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="section-title">
+        <p class="tag">PROYECTOS</p>
+        <h2>El territorio desde <span>otra perspectiva</span></h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card"><img src="recursos/imagenes/proyecto-01.svg" alt="Análisis territorial"><div class="project-info"><span>PROYECTO 01</span><h3>Análisis territorial</h3><p>Información geoespacial y análisis del terreno.</p></div></article>
+        <article class="project-card"><img src="recursos/imagenes/proyecto-02.svg" alt="Levantamiento aéreo"><div class="project-info"><span>PROYECTO 02</span><h3>Levantamiento aéreo</h3><p>Captura y representación del territorio.</p></div></article>
+        <article class="project-card"><img src="recursos/imagenes/proyecto-03.svg" alt="Modelo digital del terreno"><div class="project-info"><span>PROYECTO 03</span><h3>Modelo del terreno</h3><p>Información para análisis topográfico.</p></div></article>
+      </div>
+    </section>
+
+    <section id="calculadora" class="calculator-section">
+      <div class="section-title calculator-heading">
+        <p class="tag">HERRAMIENTAS GEOMÁTICAS</p>
+        <h2>Cálculos para <span>tu levantamiento</span></h2>
+        <p>Calcula pendiente, distancia, azimut, área y perímetro directamente desde el navegador.</p>
+      </div>
+      <div class="tools-grid">
+        <div class="calculator tool-card">
+          <h3>01 · Pendiente</h3>
+          <label for="distance">Distancia horizontal (m)</label>
+          <input type="number" id="distance" min="0.0001" step="any" inputmode="decimal" placeholder="Ej. 100">
+          <label for="elevation">Desnivel (m)</label>
+          <input type="number" id="elevation" step="any" inputmode="decimal" placeholder="Ej. 12">
+          <button id="calculateButton" class="btn primary" type="button">Calcular pendiente</button>
+          <div id="result" class="result" aria-live="polite">Introduce los datos.</div>
+        </div>
+
+        <div class="calculator tool-card">
+          <h3>02 · Distancia y azimut</h3>
+          <p class="tool-note">Coordenadas planas: Norte (N) y Este (E), azimut desde el Norte en sentido horario.</p>
+          <div class="coordinate-pair"><div><label for="p1n">P1 Norte (m)</label><input id="p1n" type="number" step="any" placeholder="1000"></div><div><label for="p1e">P1 Este (m)</label><input id="p1e" type="number" step="any" placeholder="500"></div></div>
+          <div class="coordinate-pair"><div><label for="p2n">P2 Norte (m)</label><input id="p2n" type="number" step="any" placeholder="1080"></div><div><label for="p2e">P2 Este (m)</label><input id="p2e" type="number" step="any" placeholder="560"></div></div>
+          <button id="calculateAzimuth" class="btn primary" type="button">Calcular distancia y azimut</button>
+          <div id="azimuthResult" class="result" aria-live="polite">Introduce las coordenadas.</div>
+        </div>
+
+        <div class="calculator tool-card polygon-tool">
+          <h3>03 · Área y perímetro</h3>
+          <p class="tool-note">Ingresa una coordenada por fila. Usa Norte y Este en metros y cierra automáticamente la poligonal.</p>
+          <div class="coordinate-table-wrap"><table class="coordinate-table"><thead><tr><th>Punto</th><th>Norte (m)</th><th>Este (m)</th></tr></thead><tbody id="polygonRows"></tbody></table></div>
+          <div class="polygon-actions"><button id="addPoint" class="btn secondary" type="button">+ Agregar punto</button><button id="calculatePolygon" class="btn primary" type="button">Calcular área y perímetro</button></div>
+          <div id="polygonResult" class="result" aria-live="polite">Agrega al menos 3 puntos.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visor" class="viewer-section">
+      <div class="section-title">
+        <p class="tag">VISOR GEOGRÁFICO</p>
+        <h2>Perfil topográfico <span>sobre el mapa</span></h2>
+        <p>Traza una línea con 2 a 10 vértices; GeoTop consulta la elevación a lo largo del trazado (servidor FastAPI → Open-Meteo) y calcula longitud, azimut, desniveles y pendientes por tramo.</p>
+      </div>
+      <div class="viewer-layout">
+        <aside class="viewer-panel calculator">
+          <h3>Trazado</h3>
+          <p class="tool-note">Clic en el mapa para agregar vértices; arrástralos para moverlos. También puedes escribirlos.</p>
+          <div class="coordinate-pair">
+            <div><label for="latInput">Latitud (° decimales, N+)</label><input id="latInput" type="text" inputmode="decimal" placeholder="4.5339"></div>
+            <div><label for="lonInput">Longitud (° decimales, E+)</label><input id="lonInput" type="text" inputmode="decimal" placeholder="-75.6811"></div>
+          </div>
+          <button id="addVertexButton" class="btn secondary" type="button">+ Agregar vértice</button>
+          <ul id="vertexList" class="vertex-list"></ul>
+          <label for="samplesInput">Puntos de muestreo (entero, 2–100)</label>
+          <input id="samplesInput" type="number" min="2" max="100" step="1" value="40">
+          <div class="viewer-buttons">
+            <button id="undoButton" class="btn secondary" type="button">Deshacer</button>
+            <button id="clearButton" class="btn secondary" type="button">Limpiar</button>
+            <button id="fitButton" class="btn secondary" type="button">Encuadrar</button>
+          </div>
+          <button id="profileButton" class="btn primary" type="button">Calcular perfil</button>
+          <div id="viewerStatus" class="viewer-status info" role="status" aria-live="polite"></div>
+          <details class="conventions" open>
+            <summary>Unidades y convenciones</summary>
+            <ul>
+              <li>Coordenadas: WGS84 (EPSG:4326), grados decimales; φ ∈ [−90, 90] (Norte +), λ ∈ [−180, 180] (Este +).</li>
+              <li>Distancias en metros sobre esfera R = 6 371 008.8 m (haversine); trazado por círculo máximo.</li>
+              <li>Elevación en metros sobre el nivel del mar (DEM ~90 m).</li>
+              <li>Azimut desde el Norte, sentido horario, rango [0°, 360°).</li>
+              <li>Pendiente % = Δz / distancia horizontal × 100; ángulo = arctan(Δz/d), positivo = ascenso en el sentido del trazado.</li>
+              <li>«Indefinido» se muestra cuando no existe valor (tramo de longitud cero, polo, antípodas, sin dato de elevación).</li>
+            </ul>
+          </details>
+        </aside>
+        <div class="viewer-main">
+          <div id="viewerMap" class="viewer-map" aria-label="Mapa interactivo"></div>
+          <div id="viewerStats" class="viewer-stats"></div>
+          <div id="profileChart" class="profile-chart"></div>
+          <p class="tool-note">Back-end: API propia en <a href="https://fastapi.tiangolo.com" target="_blank" rel="noopener">FastAPI</a> (<code>main.py</code>) que consulta <a href="https://open-meteo.com/en/docs/elevation-api" target="_blank" rel="noopener">Open-Meteo Elevation</a> (Copernicus DEM GLO-90, CC BY 4.0; uso no comercial). Si el servidor no está disponible (p. ej. en GitHub Pages), la página consulta Open-Meteo directamente. Requiere Internet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="section-title">
+        <p class="tag">CONTACTO</p>
+        <h2>Hablemos de tu <span>proyecto</span></h2>
+        <p>Déjanos los datos de tu proyecto y nos pondremos en contacto contigo.</p>
+      </div>
+      <form id="contactForm" class="contact-form" action="https://formsubmit.co/juanestebangallegomesa7@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Nueva solicitud de cotización - GeoTop">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_replyto" value="">
+        <input type="hidden" name="_honey" value="">
+        <input type="text" id="name" name="name" placeholder="Nombre" autocomplete="name" required>
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" autocomplete="email" required>
+        <select id="service" name="service" aria-label="Servicio">
+          <option>Levantamiento topográfico</option><option>Georreferenciación</option><option>Fotogrametría</option><option>Cartografía</option><option>SIG</option><option>Otro</option>
+        </select>
+        <textarea id="message" name="message" placeholder="Cuéntanos sobre tu proyecto..." rows="6" required></textarea>
+        <button class="btn primary" type="submit">Enviar solicitud</button>
+        <div id="formMessage" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="footer-logo" src="recursos/imagenes/logo-geotop.svg" alt="GeoTop - Topografía y Geomática">
+    <p>Topografía • Geomática • Información geoespacial</p>
+    <small>© 2026 GeoTop</small>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="script.js"></script>
+  <script src="visor.js"></script>
+</body>
+</html>

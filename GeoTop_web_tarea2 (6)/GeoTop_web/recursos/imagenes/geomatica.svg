@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111c"/><stop offset="1" stop-color="#15334a"/></linearGradient></defs>
+<rect width="1200" height="700" fill="url(#b)"/>
+<g stroke="#36d7ff" stroke-opacity=".35" fill="none"><path d="M70 120H1130M70 220H1130M70 320H1130M70 420H1130M70 520H1130M170 70V620M300 70V620M430 70V620M560 70V620M690 70V620M820 70V620M950 70V620"/></g>
+<g fill="#19d38a" stroke="#cffff0" stroke-width="2"><circle cx="210" cy="430" r="11"/><circle cx="390" cy="300" r="11"/><circle cx="590" cy="470" r="11"/><circle cx="800" cy="250" r="11"/><circle cx="980" cy="390" r="11"/></g>
+<g stroke="#19d38a" stroke-width="4" fill="none"><path d="M210 430L390 300L590 470L800 250L980 390"/><path d="M210 430L800 250" stroke-dasharray="10 12"/></g>
+<g fill="#fff"><text x="70" y="80" font-family="Arial" font-size="42" font-weight="700">GEOMÁTICA</text><text x="72" y="116" font-family="Arial" font-size="22" opacity=".75">GNSS • SIG • cartografía • datos geoespaciales</text></g>
+<g transform="translate(1010 110)"><path d="M0 0 L75 35 L0 70 Z" fill="#19d38a"/><circle cx="0" cy="35" r="8" fill="#fff"/></g>
+<g fill="#dffef1" font-family="Arial"><text x="72" y="625" font-size="24">Del posicionamiento al análisis espacial</text><text x="72" y="660" font-size="18" opacity=".75">Datos GNSS, redes de control, SIG y representación cartográfica</text></g>
+</svg>

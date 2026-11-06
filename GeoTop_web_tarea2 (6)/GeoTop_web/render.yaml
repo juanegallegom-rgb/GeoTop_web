@@ -1,0 +1,9 @@
+# Despliegue permanente y gratuito en Render (https://render.com): el PC no necesita estar encendido.
+services:
+  - type: web
+    name: geotop
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/salud

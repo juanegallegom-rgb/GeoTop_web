@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081713"/><stop offset="1" stop-color="#123c2e"/></linearGradient><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#2bdc9a" stroke-opacity=".13"/></pattern></defs>
+<rect width="1200" height="700" fill="url(#bg)"/><rect width="1200" height="700" fill="url(#grid)"/>
+<g fill="none" stroke="#25d995" stroke-width="4" opacity=".8"><path d="M90 510 C180 380 270 580 380 430 S570 300 690 420 S900 560 1110 300"/><path d="M110 570 C210 450 290 630 420 480 S600 350 730 470 S930 620 1130 360"/><path d="M140 450 C240 320 310 510 430 370 S600 230 750 360 S940 470 1080 250"/></g>
+<g fill="#fff"><text x="70" y="90" font-family="Arial" font-size="42" font-weight="700">TOPOGRAFÍA</text><text x="72" y="130" font-family="Arial" font-size="22" opacity=".75">Levantamiento • nivelación • curvas de nivel</text></g>
+<g transform="translate(800 95)"><circle cx="0" cy="0" r="58" fill="none" stroke="#19d38a" stroke-width="3"/><path d="M0 -48V48M-48 0H48" stroke="#19d38a" stroke-width="3"/><path d="M0 -65 L-10 -42 L10 -42 Z" fill="#19d38a"/><text x="-8" y="-76" fill="#fff" font-family="Arial" font-size="18">N</text></g>
+<g fill="#dffef1" font-family="Arial"><text x="72" y="625" font-size="24">Control geométrico del terreno</text><text x="72" y="660" font-size="18" opacity=".75">Coordenadas, cotas, distancias y pendientes</text></g>
+</svg>
